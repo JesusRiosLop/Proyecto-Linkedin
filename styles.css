@@ -1,0 +1,16 @@
+.desplegable_principal{
+    display: none;
+}
+.desplegable_secundario{
+    display: none;
+}
+.main_index{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid_nav{
+    span: 1;
+}
+.grid_news{
+    span: 2;
+}
