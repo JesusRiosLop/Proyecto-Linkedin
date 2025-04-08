@@ -11,15 +11,14 @@
 
 <body>
     <header>
-        <img src="" alt="logo">
-        <nav>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-
-            </ul>
-        </nav>
+        <div class="div_logo">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <h1 class="titulo">Intership Students</h1>
+        </div>
+        <div class="botones">
+            <button class="boton_login">Entrar</button>
+            <button class="boton_registro">Registrarse</button>       
+        </div>
         <div id="desplegable" class="desplegable_login">
             <div class="login">
                 <span class="closeLogin" onclick="closeModal()">&times;</span>
@@ -198,19 +197,20 @@
             </div>
         </div>
     </header>
-    <main class="main_index"></main>
-        <h1>Bienvenido a El escaparate</h1>
-        <div class="grid_nav"></div>
-        <div class="grid_news">
-            <div class="tarjeta_news">
-                <div class="contenido_new">
-                    <img src="images/usuario.png" alt="">
-                    <h3>Usuario</h3>
-                </div>
-                <p>Noticia de interacción</p>
-            </div>
-        </div>
-    </main>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>Inicio</li>
+                <li>Estudiantes</li>
+                <li>Perfil</li>
+                <li>Empresas</li>
+            </ul>
+        </nav>
+        <main class="content">
+                <h1>Bienvenido a El escaparate</h1>
+        </main>  
+    </div>
+
     <footer>
 
     </footer>
