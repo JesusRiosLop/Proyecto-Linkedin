@@ -1,3 +1,5 @@
+/*ESTILOS GENERALES*/
+
 * {
     margin: 0;
     padding: 0;
@@ -33,38 +35,6 @@ header{
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-}
-.botones{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: right;
-    margin-left: 0px;
-}
-.boton_login{
-    background-color: #03e958;
-    color: white;
-    border: 1px  solid black;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-.boton_registro{
-    background-color: #00B4D8;
-    color: white;
-    border: 1px  solid black;
-    border-radius: 5px;
-}
-.login{
-    display: none;
-}
-.registro{
-    display: none;
-}
-.desplegable_principal{
-    display: none;
-}
-.desplegable_secundario{
-    display: none;
 }  
 .container {
 display: flex;
@@ -105,4 +75,99 @@ box-sizing: border-box;
 .content h1 {
 color: #333;
 }
+footer{
+    width: 100%;
+    height: 50px;
+    color: black;
+    background-color: #e3e1e1;
+    text-align: center;
+    padding: 20px;
+}
 
+/*ESTILOS LOGIN*/
+.main_login{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.div_logo_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.fieldset_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e1e1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    height: auto;
+}
+.legend_login{
+    color: black;
+    font-size: 2rem;
+}
+.form_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.form_login label{
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.form_login input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.botones_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.boton_login{
+    background-color: #03e958;
+    color: white;
+    border: 1px  solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 40%;
+    height: 35px;
+}
+.boton_registro{
+    background-color: #00B4D8;
+    color: white;
+    border: 1px  solid black;
+    border-radius: 5px;
+    width: 40%;
+    height: 35px;
+}
+.boton_login:hover{
+    background-color: #59dc89;
+    color: white;
+    border: 1px  solid black;
+    border-radius: 5px;
+}
+.boton_registro:hover{
+    background-color: #3bc0da;
+    color: white;
+    border: 1px  solid black;
+    border-radius: 5px;
+}
