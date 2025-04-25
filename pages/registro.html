@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Login - Internship Students">
+    <link rel="stylesheet" href="../styles.css">
+    <script src=""></script>
+    <title>Login - Internship Students</title>
+</head>
+
+<body>
+    <header>
+        <div class="div_logo">
+            <img class="logo" src="../images/logo.png" alt="logo">
+            <h1 class="titulo">Internship Students</h1>
+        </div>
+    </header>
+    <main class="main_registro">
+        <fieldset class="fieldset_login">
+            <legend class="legend_login">Registro</legend>
+            <form class="form_login" action="">
+                
+                <label for="razon">Razon social:*</label>
+                <select class="select_registro" required>
+                    <option value="alumnos">Alumno</option>
+                    <option value="centro">Centro</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+
+                <label for="username">Usuario:*</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Contraseña:*</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="password">Repetir contraseña:*</label>
+                <input type="password" id="password2" name="password2" required>
+
+                <label for="email">Correo electrónico:*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:*</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <div class="botones_registro">
+                    <button class="boton_registrarse" type="submit">Registrarse</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>© 2025 Internship Students. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
