@@ -249,7 +249,7 @@ footer{
     align-self: center;
 }
 
-/*ESTILOS PERFIL ALUMNO*/
+/*ESTILOS PERFILES*/
 
 .content_perfil{
     display: flex;
@@ -260,17 +260,23 @@ footer{
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.content_perfil h2{
-    color: black;
-    font-size: 1.25rem;
-    margin-bottom: 20px;
+.fieldset_perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e1e1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
 }
-.content_perfil label{
+.form_login label{
     color: black;
     font-size: 1rem;
     margin-bottom: 20px;
 }
-.content_perfil input{
+.form_login input{
     width: 40%;
     height: 30px;
     border-radius: 5px;
@@ -278,7 +284,15 @@ footer{
     margin-bottom: 20px;
     padding-left: 10px;
 }
-.content_perfil .input_files{
+.form_login textarea{
+    width: 60%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.form_login .input_files{
     width: 20%;
     height: 30px;
     border-radius: 5px;
@@ -286,7 +300,7 @@ footer{
     margin-bottom: 20px;
     padding-left: 10px;
 }
-.content_perfil select{
+.form_login select{
     width: 20%;
     height: 30px;
     border-radius: 5px;

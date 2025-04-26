@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="Perfil - Internship Students">
+    <meta name="viewport" content="Perfil Alumno - Internship Students">
     <link rel="stylesheet" href="../styles.css">
     <script src=""></script>
-    <title>Perfil - Internship Students</title>
+    <title>Perfil Alumno - Internship Students</title>
 </head>
 
 <body>
@@ -27,75 +27,68 @@
             </ul>
         </nav>
         <main class="content_perfil">
-                <form class="form_login" action="">
+            <fieldset class="fieldset_perfil">
+                <legend class="legend_login">Perfil Alumno</legend>
+            <form class="form_login" action="">
+                <label for="instituto_id">Instituto:</label>
+                <select id="instituto_id" name="instituto_id" required>
+                    <option value="">Selecciona un instituto</option>
+                    <option value="1">Instituto A</option>
+                    <option value="2">Instituto B</option>
+                    <option value="3">Instituto C</option>
+                </select>
 
-                    <h2>Datos del alumno:</h2>
-                    <label for="img_perfil">Imagen de perfil:</label>
-                    <input class="input_files" type="file" id="img_perfil" name="img_perfil">
+                <label for="estudio_id">Estudio:</label>
+                <select id="estudio_id" name="estudio_id" required>
+                    <option value="">Selecciona un estudio</option>
+                    <option value="1">Estudio X</option>
+                    <option value="2">Estudio Y</option>
+                    <option value="3">Estudio Z</option>
+                </select>
 
-                    <label for="name">Nombre:*</label>
-                    <input type="text" id="name" name="name" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="apellidos">Apellidos:*</label>
-                    <input type="text" id="apellidos" name="apellidos" required>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
 
-                    <label for="dni">DNI:*</label>
-                    <input type="text" id="dni" name="dni" required>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
 
-                    <label for="direccion">Dirección:*</label>
-                    <input type="text" id="direccion" name="direccion" required>
+                <label for="descripcion_personal">Descripción Personal:</label>
+                <textarea id="descripcion_personal" name="descripcion_personal"></textarea>
 
-                    <label for="provincia">Provincia:*</label>
-                    <input type="text" id="provincia" name="provincia" required>
+                <label for="habilidades">Habilidades:</label>
+                <textarea id="habilidades" name="habilidades"></textarea>
 
-                    <h2>Información profesional</h2>
-                    <label for="centro">Centro de estudios:*</label>
-                    <select class="select_centro" name="select_centro" id="select_centro" required>
-                        <option value="alumnos">opción</option>
-                    </select>
+                <label for="idiomas">Idiomas:</label>
+                <textarea id="idiomas" name="idiomas"></textarea>
 
-                    <label for="estudios">Estudios:*</label>
-                    <select class="select_centro" name="select_centro" id="select_centro" required>
-                        <option value="alumnos">opción</option>
-                    </select>
+                <label for="experiencia">Experiencia:</label>
+                <textarea id="experiencia" name="experiencia"></textarea>
 
-                    <label for="redes">Redes profesionales:*</label>
-                    <input type="textarea" id="redes" name="redes" required>
+                <label for="certificaciones">Certificaciones:</label>
+                <textarea id="certificaciones" name="certificaciones"></textarea>
 
-                    <label for="idiomas">Idiomas:*</label required>
-                    <input type="textarea" id="idiomas" name="idiomas" required>
+                <label for="proyectos">Proyectos:</label>
+                <textarea id="proyectos" name="proyectos"></textarea>
 
-                    <label for="habilidades">Habilidades y competencias:*</label>
-                    <input type="textarea" id="habilidades" name="habilidades" required>
+                <label for="redes_sociales">Redes Sociales:</label>
+                <textarea id="redes_sociales" name="redes_sociales"></textarea>
 
-                    <label for="experiencia">Experiencia:</label>
-                    <input type="textarea" id="experiencia" name="experiencia">
+                <label for="foto_perfil">URL Foto de Perfil:</label>
+                <input class="input_file" type="file" id="foto_perfil" name="foto_perfil">
 
-                    <label for="certificados">Certificaciones y cursos:</label>
-                    <input type="textarea" id="certificados" name="certificados">
+                <label for="video_cv">URL Video CV:</label>
+                <input class="input_file" type="file" id="video_cv" name="video_cv">
 
-                    <label for="proyectos">Proyectos personales:</label>
-                    <input type="textarea" id="proyectos" name="proyectos">
+                <label for="carta_presentacion">Carta de Presentación:</label>
+                <input class="input_file" type="file" id="carta_presentacion" name="carta_presentacion">
 
-                    <label for="video_cv">Video CV:</label>
-                    <input class="input_files" type="file" id="video_cv" name="video_cv">
-
-                    <label for="presentación">Carta de presentacion:</label>
-                    <input class="input_files" type="file" id="presentacion" name="presentacion" required>
-    
-                    <h2>Contacto:</h2>
-                    <label for="email">Correo electrónico:*</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="telefono">Teléfono:*</label>
-                    <input type="tel" id="telefono" name="telefono" required>
-    
-                    <div class="botones_registro">
-                        <button class="boton_registrarse" type="submit">Guardar</button>
-                    </div>
-                </form>
+                <button class="boton_registrarse" type="submit">Guardar</button>
+            </form>
         </main>
-      
+        </fieldset>
     </div>
 
     <footer>
